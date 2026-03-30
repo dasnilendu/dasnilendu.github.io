@@ -9,6 +9,7 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
 
 // Your custom styles below
 .page-header {
+  color: $header-heading-color;
   position: relative; // Needed for absolute positioning of the logo
   text-align: center; // Keep the title centered if desired
 }
