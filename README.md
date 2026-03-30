@@ -3,5 +3,5 @@ Hi! I am a 4th year PhD student at [University of Utah](https://www.math.utah.ed
 
 
 <p align="center">
- <img src="/assets/my-image.jpg" alt="Project header image" width="600" height="400" />
+ <img src="/assets/img/my-image.jpg" alt="Project header image" width="600" height="400" />
 </p>
