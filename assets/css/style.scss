@@ -2,9 +2,16 @@
 ---
 @import "{{ jekyll-theme-cayman }}";
 
+// Your custom styles below
 .page-header {
-  background-image: url('../images/my-image.jpg');
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: relative; // Needed for absolute positioning of the logo
+  text-align: center; // Keep the title centered if desired
+}
+
+.site-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  max-width: 100px; // Adjust size as needed
+  height: auto;
 }
