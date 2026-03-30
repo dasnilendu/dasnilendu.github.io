@@ -1,5 +1,9 @@
 ---
 ---
+
+$header-bg-color: #155799;           // Right side of gradient (default green)
+$header-bg-color-secondary: #155799; // Left side of gradient (default blue)
+
 @import "{{ site.theme }}";
 
 // Your custom styles below
