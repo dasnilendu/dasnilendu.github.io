@@ -13,5 +13,14 @@
   top: 1rem;
   left: 1rem;
   max-width: 400px; // Adjust size as needed
-  height: 175px;
+  height: auto;
 }
+
+@media screen and (max-width: 42rem) {
+  .site-logo {
+    position: static;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+}
+
