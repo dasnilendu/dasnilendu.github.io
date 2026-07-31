@@ -4,5 +4,5 @@ title: Teachings
 permalink: /teaching/
 ---
 
-## Teaching
+## Teachings
 Write your content here...
