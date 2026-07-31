@@ -49,8 +49,8 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 36px;            /* Increased from 28px */
-  height: 26px;           /* Increased from 20px */
+  width: 44px;            /* Increased from 28px */
+  height: 32px;           /* Increased from 20px */
   cursor: pointer;
   padding: 10px 12px;     /* Increased padding */
   background: rgba(255, 255, 255, 0.2);
@@ -69,7 +69,7 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
 /* The Three Bars (Thicker & Separated) */
 .hamburger-btn span {
   display: block;
-  height: 4px;            /* Increased line thickness from 3px */
+  height: 6px;            /* Increased line thickness from 3px */
   width: 100%;
   background-color: #ffffff;
   border-radius: 2px;
