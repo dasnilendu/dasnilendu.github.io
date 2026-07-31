@@ -28,7 +28,7 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
 }
 
 /* ==========================================================================
-   Hamburger Navigation Styling (Enlarged)
+   Hamburger Navigation Styling
    ========================================================================== */
 
 /* Outer Position Container */
@@ -44,15 +44,15 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
   display: none;
 }
 
-/* Larger Hamburger Button Container */
+/* Hamburger Button Container */
 .hamburger-btn {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 44px;            /* Increased from 28px */
-  height: 32px;           /* Increased from 20px */
+  width: 36px;
+  height: 26px;
   cursor: pointer;
-  padding: 10px 12px;     /* Increased padding */
+  padding: 10px 12px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 6px;
   transition: background 0.2s ease, transform 0.1s ease;
@@ -66,10 +66,10 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
   transform: scale(0.96); /* Subtle click feedback */
 }
 
-/* The Three Bars (Thicker & Separated) */
+/* The Three Bars */
 .hamburger-btn span {
   display: block;
-  height: 6px;            /* Increased line thickness from 3px */
+  height: 4px;
   width: 100%;
   background-color: #ffffff;
   border-radius: 2px;
@@ -85,7 +85,7 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 180px;      /* Slightly wider dropdown to match larger button */
+  min-width: 200px;
   background-color: #ffffff;
   border-radius: 6px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
@@ -98,11 +98,12 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
 
 .dropdown-menu li a {
   display: block;
-  padding: 12px 18px;    /* Comfortably sized click targets */
+  padding: 12px 18px;
   color: #333333;
   font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .dropdown-menu li a:hover {
@@ -111,12 +112,21 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
   text-decoration: none;
 }
 
+/* Active Page Highlight */
+.dropdown-menu li a.active {
+  background-color: #eaf5f0;
+  color: #159957;
+  font-weight: 700;
+  border-left: 4px solid #159957;
+  padding-left: 14px;
+}
+
 /* Toggle Logic: Show menu when checked */
 .menu-toggle-checkbox:checked ~ .dropdown-menu {
   display: block;
 }
 
-/* Morph 3 bars into an 'X' icon when active (Adjusted translation for 26px height) */
+/* Morph 3 bars into an 'X' icon when active */
 .menu-toggle-checkbox:checked + .hamburger-btn span:nth-child(1) {
   transform: translateY(11px) rotate(45deg);
 }
@@ -206,25 +216,43 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
 }
 
 /* Interactive BibTeX Toggle */
-.bibtex-toggle {
+details.bibtex-toggle {
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
-.bibtex-toggle summary {
-  list-style: none; /* Hide default arrow */
+details.bibtex-toggle summary {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
 }
 
-.bibtex-toggle summary::-webkit-details-marker {
-  display: none;
+/* Hide default disclosure arrow across browsers */
+details.bibtex-toggle summary::-webkit-details-marker,
+details.bibtex-toggle summary::marker {
+  display: none !important;
 }
 
-.bibtex-toggle pre {
+/* Dark BibTeX Box */
+details.bibtex-toggle pre {
   margin-top: 10px;
   padding: 12px;
   background-color: #282c34;
   color: #abb2bf;
   border-radius: 6px;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 0.8rem;
+  line-height: 1.45;
   overflow-x: auto;
-  white-space: pre-wrap;
+  white-space: pre;
+  display: block;
+}
+
+details.bibtex-toggle pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
 }
