@@ -15,7 +15,7 @@ Below is a list of my research preprints and published papers. Click on any publ
 ## Preprints
 
 <div class="pub-card" markdown="1">
-<div class="pub-title"><strong>On first variations of W-volume of geometrically-finite hyperbolic 3-manifolds</strong></div>
+<div class="pub-title"><strong>On the first variation of W-volume of geometrically-finite hyperbolic 3-manifolds</strong></div>
 <div class="pub-authors"><strong>Nilendu Das</strong></div>
 <div class="pub-meta"><em>arXiv preprint arXiv:0000.00000</em> (2026)</div>
 
@@ -26,7 +26,7 @@ Below is a list of my research preprints and published papers. Click on any publ
 <details class="bibtex-toggle">
 <summary class="pub-btn bib-btn">BibTeX</summary>
 <pre><code>@article{Das26,
-  title={On first variations of W-volume of geometrically-finite hyperbolic 3-manifolds},
+  title={On the first variation of W-volume of geometrically-finite hyperbolic 3-manifolds},
   author={Nilendu Das},
   journal={arXiv preprint arXiv:0000.00000},
   year={2026}
