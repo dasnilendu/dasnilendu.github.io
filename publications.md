@@ -7,7 +7,7 @@ permalink: /publications/
 # Preprints & Publications
 
 <div class="pub-intro" markdown="1">
-Below is a selection of my research preprints and published papers. Click on any publication for download links or BibTeX citations.
+Below is a list of my research preprints and published papers. Click on any publication for download links or BibTeX citations.
 </div>
 
 ---
@@ -15,20 +15,20 @@ Below is a selection of my research preprints and published papers. Click on any
 ## Preprints
 
 <div class="pub-card" markdown="1">
-<div class="pub-title"><strong>A Novel Approach to Asymptotic Bounds in Topological Data Analysis</strong></div>
-<div class="pub-authors"><strong>Your Name</strong>, Jane Doe, and John Smith</div>
-<div class="pub-meta"><em>arXiv preprint arXiv:2603.12345</em> (2026)</div>
+<div class="pub-title"><strong>On first variations of W-volume of geometrically-finite hyperbolic 3-manifolds</strong></div>
+<div class="pub-authors"><strong>Nilendu Das</strong></div>
+<div class="pub-meta"><em>arXiv preprint arXiv:0000.00000</em> (2026)</div>
 
 <div class="pub-links" markdown="1">
-<a href="https://arxiv.org/abs/2603.12345" class="pub-btn" target="_blank">arXiv</a>
+<a href="https://arxiv.org/abs/0000.00000" class="pub-btn" target="_blank">arXiv</a>
 <a href="/assets/pdf/tda-asymptotic-bounds-2026.pdf" class="pub-btn pdf-btn" target="_blank">PDF</a>
 
 <details class="bibtex-toggle">
 <summary class="pub-btn bib-btn">BibTeX</summary>
-<pre><code>@article{yourname2026asymptotic,
-  title={A Novel Approach to Asymptotic Bounds in Topological Data Analysis},
-  author={Your Name and Doe, Jane and Smith, John},
-  journal={arXiv preprint arXiv:2603.12345},
+<pre><code>@article{Das26,
+  title={On first variations of W-volume of geometrically-finite hyperbolic 3-manifolds},
+  author={Nilendu Das},
+  journal={arXiv preprint arXiv:0000.00000},
   year={2026}
 }</code></pre>
 </details>
