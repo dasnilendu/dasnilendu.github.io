@@ -13,6 +13,22 @@
     {% include head-custom.html %}
   </head>
   <body>
+
+    <!-- Top Left Dropdown Navigation -->
+    <nav class="top-nav">
+      <ul class="nav-menu">
+        <li class="nav-item has-dropdown">
+          <a href="#" class="dropdown-toggle">Menu &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+            <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+            <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
