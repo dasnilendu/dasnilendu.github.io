@@ -7,7 +7,12 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
 
 @import "{{ site.theme }}";
 
-// Your custom styles below
+// Ensure the header container acts as the anchor point
+.page-header {
+  position: relative;
+}
+
+// Custom Header Styles
 .page-header h1 {
   color: $header-heading-color;
   position: relative; // Needed for absolute positioning of the logo
@@ -22,6 +27,105 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
   height: auto;
 }
 
+/* ==========================================================================
+   Hamburger Navigation Styling
+   ========================================================================== */
+
+/* Outer Position Container */
+.top-nav {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 1000;
+}
+
+/* Hide the invisible checkbox mechanism */
+.menu-toggle-checkbox {
+  display: none;
+}
+
+/* Hamburger Button Container */
+.hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.hamburger-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* The Three Bars */
+.hamburger-btn span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Dropdown Menu Panel */
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 16px;
+  color: #333333;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f3f6f8;
+  color: #159957;
+  text-decoration: none;
+}
+
+/* Toggle Logic: Show menu when checked */
+.menu-toggle-checkbox:checked ~ .dropdown-menu {
+  display: block;
+}
+
+/* Morph 3 bars into an 'X' icon when active */
+.menu-toggle-checkbox:checked + .hamburger-btn span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.menu-toggle-checkbox:checked + .hamburger-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle-checkbox:checked + .hamburger-btn span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 30rem) {
   .site-logo {
     position: static;
@@ -29,4 +133,3 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
     margin: 0 auto 0rem;
   }
 }
-
