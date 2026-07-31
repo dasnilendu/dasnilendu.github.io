@@ -137,3 +137,94 @@ $header-bg-color-secondary: #000000; // Left side of gradient (default blue)
     margin: 0 auto 0rem;
   }
 }
+
+/* ==========================================================================
+   Academic Publications Styling
+   ========================================================================== */
+
+.pub-card {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.pub-title {
+  font-size: 1.1rem;
+  color: #159957;
+  margin-bottom: 0.25rem;
+}
+
+.pub-authors {
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+.pub-meta {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-bottom: 0.75rem;
+}
+
+/* Action Buttons */
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.pub-btn {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #159957;
+  background-color: #f3f6f8;
+  border: 1px solid #d1d5da;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pub-btn:hover {
+  background-color: #159957;
+  color: #ffffff;
+  border-color: #159957;
+  text-decoration: none;
+}
+
+.pub-btn.pdf-btn {
+  color: #d9534f;
+  border-color: #f5c6cb;
+  background-color: #fdf7f7;
+}
+
+.pub-btn.pdf-btn:hover {
+  background-color: #d9534f;
+  color: #ffffff;
+  border-color: #d9534f;
+}
+
+/* Interactive BibTeX Toggle */
+.bibtex-toggle {
+  display: inline-block;
+}
+
+.bibtex-toggle summary {
+  list-style: none; /* Hide default arrow */
+}
+
+.bibtex-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.bibtex-toggle pre {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #282c34;
+  color: #abb2bf;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
