@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Teaching
-permalink: /teachings/
+permalink: /teaching/
 ---
 
-## Teachings
+## Teaching
 Write your content here...
