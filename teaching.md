@@ -10,6 +10,14 @@ permalink: /teaching/
 
 <div class="academic-list">
   <div class="academic-row">
+    <div class="academic-year">Fall 2026</div>
+    <div class="academic-details">
+      <strong>MATH 1030</strong> — Quantitative Reasoning
+      <span class="role-inline instructor">Instructor</span>
+    </div>
+  </div>
+  
+  <div class="academic-row">
     <div class="academic-year">Fall 2025</div>
     <div class="academic-details">
       <strong>MATH 1220</strong> — Calculus II
