@@ -42,7 +42,7 @@ permalink: /travels/
       <div class="travel-location">Institut Henri Poincaré (IHP) • Paris, France</div>
       <div class="travel-footer">
         <span class="travel-badge conference">Conference</span>
-        <a href="https://www.ihp.fr/en" class="travel-link" target="_blank">IHP Webpage ↗</a>
+        <a href="https://indico.math.cnrs.fr/event/11570/" class="travel-link" target="_blank">IHP Webpage ↗</a>
       </div>
     </div>
   </div>
