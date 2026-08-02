@@ -16,7 +16,7 @@ permalink: /travels/
       <div class="travel-location">Simons Laufer Mathematical Sciences Institute (SLMath) • Berkeley, CA</div>
       <div class="travel-footer">
         <span class="travel-badge program-associate">Program Associate</span>
-        <a href="https://www.slmath.org" class="travel-link" target="_blank">SLMath Webpage ↗</a>
+        <a href="https://www.slmath.org/programs/368" class="travel-link" target="_blank">SLMath Webpage ↗</a>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@ permalink: /travels/
       <div class="travel-location">Simons Laufer Mathematical Sciences Institute (SLMath) • Berkeley, CA</div>
       <div class="travel-footer">
         <span class="travel-badge school">Summer School</span>
-        <a href="https://www.slmath.org" class="travel-link" target="_blank">SLMath Webpage ↗</a>
+        <a href="https://www.slmath.org/summer-schools/1105" class="travel-link" target="_blank">SLMath Webpage ↗</a>
       </div>
     </div>
   </div>
