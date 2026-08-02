@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8">
 
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RY66GXK1GX');
+    </script>
+
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
@@ -15,23 +25,23 @@
   <body>
 
   <!-- Top Left Dropdown Navigation -->
-<nav class="top-nav">
-  <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
-  <label for="menu-toggle" class="hamburger-btn" aria-label="Toggle Navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
+  <nav class="top-nav">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="hamburger-btn" aria-label="Toggle Navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-  <ul class="dropdown-menu">
-    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-    <li><a href="{{ '/publications/' | relative_url }}">Preprints &amp; Publications</a></li>
-    <li><a href="{{ '/resources/' | relative_url }}">Resources</a></li>
-    <li><a href="{{ '/teaching/' | relative_url }}">Teaching</a></li>
-    <li><a href="{{ '/travels/' | relative_url }}">Travels</a></li>
-  </ul>
-</nav>
-    
+    <ul class="dropdown-menu">
+      <li><a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
+      <li><a href="{{ '/publications/' | relative_url }}" class="{% if page.url contains '/publications' %}active{% endif %}">Preprints &amp; Publications</a></li>
+      <li><a href="{{ '/resources/' | relative_url }}" class="{% if page.url contains '/resources' %}active{% endif %}">Resources</a></li>
+      <li><a href="{{ '/teaching/' | relative_url }}" class="{% if page.url contains '/teaching' %}active{% endif %}">Teaching</a></li>
+      <li><a href="{{ '/travels/' | relative_url }}" class="{% if page.url contains '/travels' %}active{% endif %}">Travels</a></li>
+    </ul>
+  </nav>
+
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
