@@ -55,6 +55,7 @@ permalink: /travels/
       <div class="travel-location">Washington University in St. Louis • St. Louis, MO</div>
       <div class="travel-footer">
         <span class="travel-badge conference">Conference</span>
+        <a href="https://sites.google.com/view/stltc/home" class="travel-link" target="_blank">St. Louis Link ↗</a>
       </div>
     </div>
   </div>
@@ -67,7 +68,7 @@ permalink: /travels/
       <div class="travel-location">Technion – Israel Institute of Technology • Haifa, Israel</div>
       <div class="travel-footer">
         <span class="travel-badge conference">Conference</span>
-        <a href="https://technion.ac.il" class="travel-link" target="_blank">Technion Link ↗</a>
+        <a href="https://cms-math.net.technion.ac.il/123-curves-surfaces-and-3-manifolds/" class="travel-link" target="_blank">Technion Link ↗</a>
       </div>
     </div>
   </div>
