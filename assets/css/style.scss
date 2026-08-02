@@ -256,3 +256,111 @@ details.bibtex-toggle pre code {
   color: inherit;
   font-size: inherit;
 }
+
+/* ==========================================================================
+   Academic Timeline Styling
+   ========================================================================== */
+
+.timeline-section {
+  margin: 2.5rem 0;
+}
+
+.timeline {
+  position: relative;
+  padding: 1rem 0;
+}
+
+/* Continuous Vertical Line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 140px; /* Distance from left edge */
+  width: 3px;
+  background-color: #159957; /* Cayman Theme Green Accent */
+}
+
+/* Row Container */
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Left Side: Dates */
+.timeline-date {
+  width: 120px;
+  text-align: right;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.4;
+  padding-top: 2px;
+}
+
+/* Middle: Circular Marker Node */
+.timeline-marker {
+  position: absolute;
+  left: 135px; /* Centered over the 3px line */
+  top: 4px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #159957;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px #159957;
+  z-index: 1;
+}
+
+/* Right Side: Institution Content */
+.timeline-content {
+  padding-left: 35px;
+  flex: 1;
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+  color: #222222;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666666;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments for mobile screens */
+@media screen and (max-width: 40rem) {
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-marker {
+    left: 10px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    padding-left: 35px;
+  }
+
+  .timeline-date {
+    width: auto;
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .timeline-content {
+    padding-left: 0;
+  }
+}
