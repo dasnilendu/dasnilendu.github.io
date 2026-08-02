@@ -364,3 +364,76 @@ details.bibtex-toggle pre code {
     padding-left: 0;
   }
 }
+
+/* ==========================================================================
+   Minimalist Academic Teaching List Styling
+   ========================================================================== */
+
+.academic-list {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.academic-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.academic-row:first-child {
+  border-top: 1px solid #eaeaea;
+}
+
+.academic-year {
+  width: 130px;
+  font-weight: 700;
+  color: #159957; /* Cayman green accent */
+  font-size: 0.92rem;
+  flex-shrink: 0;
+}
+
+.academic-details {
+  flex: 1;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+/* Role Pills */
+.role-inline {
+  margin-left: 10px;
+  font-size: 0.78rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.role-inline.instructor {
+  background-color: #eaf5f0;
+  color: #159957;
+}
+
+.role-inline.ta {
+  background-color: #fef3d6;
+  color: #b06000;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 30rem) {
+  .academic-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  .academic-year {
+    width: auto;
+    margin-bottom: 4px;
+  }
+
+  .role-inline {
+    margin-left: 4px;
+    margin-top: 4px;
+  }
+}
