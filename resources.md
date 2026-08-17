@@ -50,14 +50,14 @@ An useful collection of foundational lecture notes, books, and reference website
     </div>
   </div>
 
-  <!-- Resource 4 -->
+ <!-- Resource 4 -->
   <div class="resource-card" markdown="1">
     <div class="resource-header">
       <h3>Lectures on Quasiconformal Mappings</h3>
-      <span class="resource-author">Lars V. Ahlfors</span>
+      <a href="https://bookstore.ams.org/ulect-38/" class="resource-btn" target="_blank">Book ↗</a>
     </div>
     <div class="resource-desc">
-      A lucid treatment of the theory of quasiconformal maps.
+       A lucid treatment of the theory of quasiconformal maps by Lars V. Ahlfors.
     </div>
   </div>
 
