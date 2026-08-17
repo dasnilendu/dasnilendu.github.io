@@ -18,7 +18,7 @@ An useful collection of foundational lecture notes, books, and reference website
   <div class="resource-card" markdown="1">
     <div class="resource-header">
       <h3>Thurston's Original Notes on Hyperbolic Geometry</h3>
-      <a href="http://library.msri.org/books/gt3m/" class="resource-btn" target="_blank">Access Notes ↗</a>
+      <a href="https://library.slmath.org/nonmsri/gt3m/" class="resource-btn" target="_blank">Access Notes ↗</a>
     </div>
     <div class="resource-desc">
       <em>The Geometry and Topology of Three-Manifolds</em> by William P. Thurston. The absolute bible of our field.
