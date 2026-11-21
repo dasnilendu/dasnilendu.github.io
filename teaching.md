@@ -8,6 +8,16 @@ permalink: /teaching/
 
 ## University of Utah
 
+
+<div class="academic-row">
+    <div class="academic-year">Spring 2027</div>
+    <div class="academic-details">
+      <strong>MATH 1220</strong> — Calculus I
+      <span class="role-inline instructor">Instructor</span>
+    </div>
+  </div>
+
+  
 <div class="academic-list">
   <div class="academic-row">
     <div class="academic-year">Fall 2026</div>
