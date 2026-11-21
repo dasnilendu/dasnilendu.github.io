@@ -8,7 +8,7 @@ permalink: /teaching/
 
 ## University of Utah
 
-
+<div class="academic-list">
 <div class="academic-row">
     <div class="academic-year">Spring 2027</div>
     <div class="academic-details">
@@ -18,7 +18,7 @@ permalink: /teaching/
   </div>
 
   
-<div class="academic-list">
+
   <div class="academic-row">
     <div class="academic-year">Fall 2026</div>
     <div class="academic-details">
